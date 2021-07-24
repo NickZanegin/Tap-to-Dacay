@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EEC5ED86-86EE-FDAE-4F60-66E12DA3A207}</ProjectGuid>
+    <ProjectGuid>{A5E42786-BFCD-F47B-C655-08FCEAEED13F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,11 +56,16 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ButtomClick.cs" />
+    <Compile Include="Assets\Scripts\SpritChang.cs" />
     <Compile Include="Assets\Scripts\UI.cs" />
+    <Compile Include="Assets\Scripts\Load.cs" />
+    <Compile Include="Assets\Scripts\Save.cs" />
     <Compile Include="Assets\Scripts\Sound.cs" />
-    <Compile Include="Assets\Scripts\Tap.cs" />
-    <Compile Include="Assets\Scripts\ProgressBar.cs" />
-    <Compile Include="Assets\Scripts\Menu.cs" />
+    <Compile Include="Assets\Scripts\AnimationClick.cs" />
+    <Compile Include="Assets\Scripts\SoundButtom.cs" />
+    <Compile Include="Assets\Scripts\FinalUI.cs" />
+    <Compile Include="Assets\Scripts\Restart.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

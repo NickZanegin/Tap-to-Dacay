@@ -1,28 +1,36 @@
-﻿using UnityEngine;
+using System.Collections.Generic;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class UI : MonoBehaviour
 {
-    public Image Final;
-    public Image ThankYou;
-    public AudioSource ButtonSound;
-    public void Thanks()
+    public Text Day;
+    public Text Name;
+
+    public List<string> names;
+    public void NextDay(int day)
     {
-        Final.gameObject.SetActive(false);
-        ThankYou.gameObject.SetActive(true);
+        Day.text = (day.ToString() + " Day");
     }
-
-    public void Restart()
+    public void NextName()
     {
-        SceneManager.LoadScene(1);
+        names.RemoveAt(0);
+        Name.text = (names[0]);
     }
-
-    public void Sound()
+    public void LoadUI(int Index, int day)
     {
-        ButtonSound.pitch = Random.Range(0.75f, 1.25f);
-        ButtonSound.Play();
+        for (int i = 0; i < names.Count; i++)
+        {
+            if (i < Index)
+            {
+                names.RemoveAt(0);
+            }
+            else
+            {
+                break;
+            }
+        }
+        Name.text = (names[0]);
+        Day.text = (day.ToString() + " Day");
     }
-
-
 }
