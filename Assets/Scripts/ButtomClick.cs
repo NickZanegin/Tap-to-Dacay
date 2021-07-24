@@ -15,8 +15,6 @@ public class ButtomClick : MonoBehaviour
         Load load = new Load();
         day = load.LoadDay();
         dayValue = load.LoadDayValue();
-        Debug.Log(day);
-        Debug.Log(dayValue);
     }
     void Start()
     {
@@ -31,17 +29,8 @@ public class ButtomClick : MonoBehaviour
                     break;
                 }
             }
-            for (int i = 0; i < nextTrah.Count; i++)
-            {
-                if (i < index)
-                {
-                    nextTrah.RemoveAt(0);
-                }
-                else
-                {
-                    break;
-                }
-            }
+            LoadListAlgoritm<int> loadList = new LoadListAlgoritm<int>();
+            nextTrah = loadList.RemovingExcess(nextTrah, index);
             sprit.LoadSprite(index);
             uI.LoadUI(index, day);
         }

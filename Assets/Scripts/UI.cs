@@ -17,19 +17,10 @@ public class UI : MonoBehaviour
         names.RemoveAt(0);
         Name.text = (names[0]);
     }
-    public void LoadUI(int Index, int day)
+    public void LoadUI(int index, int day)
     {
-        for (int i = 0; i < names.Count; i++)
-        {
-            if (i < Index)
-            {
-                names.RemoveAt(0);
-            }
-            else
-            {
-                break;
-            }
-        }
+        LoadListAlgoritm<string> loadList = new LoadListAlgoritm<string>();
+        names = loadList.RemovingExcess(names, index);
         Name.text = (names[0]);
         Day.text = (day.ToString() + " Day");
     }

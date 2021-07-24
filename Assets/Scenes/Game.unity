@@ -339,6 +339,7 @@ MonoBehaviour:
   Day: {fileID: 495209776}
   Name: {fileID: 1716815492}
   names:
+  - Paper bag
   - Apple Core
   - Leaf
   - Cardboard box
@@ -1893,6 +1894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite:
+  - {fileID: 21300000, guid: 33a9c509038585e48be905cdd2c55354, type: 3}
   - {fileID: 21300000, guid: f68bc9b742bf6b040bfe906daa8142f0, type: 3}
   - {fileID: 21300000, guid: c3ad494cd37f66e4c8ac4a77613d6c5e, type: 3}
   - {fileID: 21300000, guid: 3bc2d24a609318944b9349dd7543b37d, type: 3}

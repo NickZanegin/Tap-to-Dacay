@@ -13,17 +13,8 @@ public class SpritChang : MonoBehaviour
     }
     public void LoadSprite(int index)
     {
-        for (int i = 0; i < sprite.Count; i++)
-        {
-            if (i < index)
-            {
-                sprite.RemoveAt(0);
-            }
-            else
-            {
-                break;
-            }
-        }
+        LoadListAlgoritm<Sprite> loadList = new LoadListAlgoritm<Sprite>();
+        sprite = loadList.RemovingExcess(sprite, index);
         image.sprite = sprite[0];
     }
 }

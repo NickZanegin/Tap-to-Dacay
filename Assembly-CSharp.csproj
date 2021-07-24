@@ -56,16 +56,17 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ButtomClick.cs" />
-    <Compile Include="Assets\Scripts\SpritChang.cs" />
-    <Compile Include="Assets\Scripts\UI.cs" />
-    <Compile Include="Assets\Scripts\Load.cs" />
-    <Compile Include="Assets\Scripts\Save.cs" />
-    <Compile Include="Assets\Scripts\Sound.cs" />
-    <Compile Include="Assets\Scripts\AnimationClick.cs" />
     <Compile Include="Assets\Scripts\SoundButtom.cs" />
-    <Compile Include="Assets\Scripts\FinalUI.cs" />
+    <Compile Include="Assets\Scripts\ButtomClick.cs" />
+    <Compile Include="Assets\Scripts\Sound.cs" />
     <Compile Include="Assets\Scripts\Restart.cs" />
+    <Compile Include="Assets\Scripts\SpritChang.cs" />
+    <Compile Include="Assets\Scripts\Save.cs" />
+    <Compile Include="Assets\Scripts\Load.cs" />
+    <Compile Include="Assets\Scripts\UI.cs" />
+    <Compile Include="Assets\Scripts\AnimationClick.cs" />
+    <Compile Include="Assets\Scripts\FinalUI.cs" />
+    <Compile Include="Assets\Scripts\LoadListAlgoritm.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
